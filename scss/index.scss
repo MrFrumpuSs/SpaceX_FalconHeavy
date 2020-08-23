@@ -83,6 +83,7 @@ main {
     }
     .info {
         margin-top: 300px;
+        margin-bottom: 450px;
         position: relative;
 		&__h {
             color: #fff;
@@ -133,6 +134,64 @@ main {
         }
     }
 }
+.footer {
+    text-align: center; 
+    &__nav {
+        margin-bottom: 28px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;   
+
+    }
+
+    &__item {
+        margin: 0 10px 0 10px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        
+        a {
+            color: #fff;
+        }
+    }
+
+    &__descriptor {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #808080;
+        margin-bottom: 30px;
+        a {
+            color: #808080;
+        }
+    }
+
+    &__button {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+        background: none;
+        border: 2px solid #fff;
+        border-radius: 6px;
+        width: 260px;
+        height: 60px;
+    }
+    .logo {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
 .video {
     max-width: 1230px;
     margin: auto;

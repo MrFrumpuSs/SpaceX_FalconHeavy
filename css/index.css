@@ -161,6 +161,7 @@ main .present__subtitle::after {
 }
 main .info {
   margin-top: 300px;
+  margin-bottom: 450px;
   position: relative;
 }
 main .info__h {
@@ -207,6 +208,53 @@ main .info .rellax {
   width: 291px;
   height: 1718px;
   z-index: 99;
+}
+
+.footer {
+  text-align: center;
+}
+.footer__nav {
+  margin-bottom: 28px;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+}
+.footer__item {
+  margin: 0 10px 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.footer__item a {
+  color: #fff;
+}
+.footer__descriptor {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #808080;
+  margin-bottom: 30px;
+}
+.footer__descriptor a {
+  color: #808080;
+}
+.footer__button {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  width: 260px;
+  height: 60px;
+}
+.footer .logo {
+  margin-bottom: 40px;
 }
 
 .video {
