@@ -4,3 +4,5 @@ var instance = new vidbg('.video', {
     poster: 'img/worlderrorload.png', // URL or relative path to fallback image
     overlay: false, // Boolean to display the overlay or not
   });
+
+var rellax = new Rellax('.rellax');

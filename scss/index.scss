@@ -81,12 +81,64 @@ main {
             }
         }
     }
+    .info {
+        margin-top: 300px;
+        position: relative;
+		&__h {
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            max-width: 177px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 140%;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+		}
+
+		&__table {
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 179.69%;
+            margin-bottom: 200px;
+            span {
+                color: #B2B0B2;
+            }
+            td {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+        &__table-h {
+           padding-right: 130px;
+        }
+
+		&__text {
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            width: 490px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 29px;
+        }
+        .rellax {
+            position: absolute;
+            top: 120px;
+            right: 177px;
+            width: 291px;
+            height: 1718px;
+            z-index: 99;
+        }
+    }
 }
 .video {
     max-width: 1230px;
     margin: auto;
     height: 750px;
 }
+
 
 
 
