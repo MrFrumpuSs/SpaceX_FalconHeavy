@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import "vidbg.scss";
 /*Обнуление*/
 *{padding: 0;margin: 0;border: 0;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
@@ -33,9 +34,6 @@ header {
         pointer-events: none;
     }
     .main-nav {
-        &__list {
-        }
-
         &__item {
             a {
                 color: #fff;
@@ -43,10 +41,6 @@ header {
         }
     }
     .sec-nav {
-
-        &_list {
-        }
-
         &__item {
             a {
                 color: #808080;
@@ -54,6 +48,64 @@ header {
         }
     }
 }
+main {
+    padding-top: 120px;
+    .present {
+        text-align: center;
+        &__h {
+            font-weight: normal;
+            font-size: 64px;
+            line-height: 75px;
+            font-family: 'Roboto', sans-serif;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+        }
+    
+        &__subtitle {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 140%;
+            font-family: 'Roboto', sans-serif;
+            color: #FFFFFF;
+            max-width: 268px;
+            margin: auto;
+            &::after {
+                content: '';
+                height: 59px;
+                display: block;
+                width: 1px;
+                background-color: #fff;
+                margin: auto;
+                margin-top: 26px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.video {
+    max-width: 1230px;
+    margin: auto;
+    height: 750px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .list {
     display: flex;
