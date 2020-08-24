@@ -17,7 +17,19 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
+html {
+    ::-webkit-scrollbar {
+        width: 10px;
 
+        background-color: #010001;
+      }
+   
+      ::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: rgba(77, 77, 77, 0.5);
+      }
+    
+}
 body {
     background-color: #010001;
     padding-top: 53px;
@@ -207,4 +219,5 @@ main {
     margin: 0 auto;
     max-width: 1230px;
 }
+@import "rocketadaptive.scss";
 @import "mobile.scss";
