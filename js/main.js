@@ -6,9 +6,16 @@ var instance = new vidbg('.video', {
   });
 
 var rellax = new Rellax('.rellax');
+window.onresize = function(event) {
+  if (document.body.clientWidth < 767) {
+    rellax.destroy();
+  }
+  if (document.body.clientWidth > 767) {
+    rellax.refresh();
+  }
+};
 if (document.body.clientWidth < 767) {
   rellax.destroy();
 }
-
 var videos = document.querySelector('video');
 videos.setAttribute("pip", false)
