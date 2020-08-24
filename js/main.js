@@ -7,7 +7,6 @@ var instance = new vidbg('.video', {
 
 var rellax = new Rellax('.rellax');
 window.onresize = function(event) {
-  alert(document.body.clientWidth);
   if (document.body.clientWidth < 758) {
     rellax.destroy();
   }
