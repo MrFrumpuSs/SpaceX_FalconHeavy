@@ -199,7 +199,7 @@ main .info__text {
   width: 490px;
   font-weight: normal;
   font-size: 16px;
-  line-height: 29px;
+  line-height: 179.7%;
 }
 main .info .rellax {
   position: absolute;
@@ -212,6 +212,7 @@ main .info .rellax {
 
 .footer {
   text-align: center;
+  padding-bottom: 130px;
 }
 .footer__nav {
   margin-bottom: 28px;
@@ -278,4 +279,119 @@ main .info .rellax {
 .container {
   margin: 0 auto;
   max-width: 1230px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+  header .logo {
+    margin-bottom: 21px;
+  }
+  header .main-nav__list {
+    margin-bottom: 21px;
+  }
+
+  main {
+    padding-top: 75px;
+  }
+  main .present__h {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  main .present__subtitle {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  main .present__subtitle::after {
+    height: 45px;
+  }
+  main .info {
+    margin-top: 70px;
+    margin-bottom: 68px;
+    position: relative;
+  }
+  main .info__h {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  main .info__table {
+    font-size: 13px;
+    margin-bottom: 100px;
+  }
+  main .info__table span {
+    color: #B2B0B2;
+  }
+  main .info__table td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  main .info__table-h {
+    padding-right: 45px;
+  }
+  main .info__text {
+    width: 320px;
+    font-size: 13px;
+  }
+  main .info .rellax {
+    position: relative;
+    top: unset;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 587px;
+  }
+
+  .footer {
+    padding-bottom: 50px;
+  }
+  .footer__nav {
+    margin-bottom: 27px;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__item {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .footer__item a {
+    color: #fff;
+  }
+  .footer__descriptor {
+    font-size: 16px;
+    color: #808080;
+    margin-bottom: 37px;
+  }
+  .footer__descriptor a {
+    color: #808080;
+  }
+  .footer__button {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    width: 260px;
+    height: 60px;
+  }
+  .footer .logo {
+    margin-bottom: 37px;
+  }
+
+  .container {
+    max-width: 320px;
+  }
+
+  .video {
+    max-width: 320px;
+    margin: auto;
+    height: 350px;
+  }
 }
