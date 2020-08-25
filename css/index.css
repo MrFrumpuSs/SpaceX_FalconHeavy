@@ -321,6 +321,9 @@ main .info .rellax {
   width: 260px;
   height: 60px;
 }
+.footer__button a {
+  color: #fff;
+}
 .footer .logo {
   margin-bottom: 40px;
 }
