@@ -19,3 +19,5 @@ if (document.body.clientWidth < 758) {
 }
 var videos = document.querySelector('video');
 videos.setAttribute("pip", false)
+
+AOS.init();

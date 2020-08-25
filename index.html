@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/aos.css">
     <title>SpaceX</title>
 </head>
 <body>
     <header class="container">
-        <img src="img/logo.svg" alt="LOGO" class="logo">
-        <nav class="main-nav">
+        <img src="img/logo.svg" data-aos="fade-down" alt="LOGO" class="logo">
+        <nav class="main-nav" data-aos="fade-down">
             <ul class="main-nav__list list">
                 <li class="main-nav__item list-item"><a href="https://www.spacex.com/vehicles/falcon-9/">Falcon 9</a></li>
                 <li class="main-nav__item list-item"><a href="https://www.spacex.com/vehicles/falcon-heavy/">Falcon Heavy</a></li>
@@ -18,7 +19,7 @@
                 <li class="main-nav__item list-item"><a href="https://www.spacex.com/updates/">Updates</a></li>
             </ul>
         </nav>
-        <nav class="sec-nav">
+        <nav class="sec-nav" data-aos="fade-down">
             <ul class="sec-nav_list list">
                 <li class="sec-nav__item list-item open-modal" data-modal="#modal1"><a href="#">About</a></li>
                 <li class="sec-nav__item list-item"><a href="https://www.nasa.gov/content/spacex-crs-image-gallery/#lowerAccordion-set1-slide1">Gallery</a></li>
@@ -28,12 +29,12 @@
     </header>
     <main>
         <section class="present">
-            <h1 class="present__h">Falcon Heavy</h1>
-            <p class="present__subtitle">the most operational rocket in the world by a factor of two</p>
-            <div class="video"></div>
+            <h1 class="present__h" data-aos="fade-up" data-aos-delay="500">Falcon Heavy</h1>
+            <p class="present__subtitle" data-aos="fade-up" data-aos-delay="1000">the most operational rocket in the world by a factor of two</p>
+            <div class="video" data-aos="fade-up" data-aos-delay="1500"></div>
         </section>
         <section class="info container">
-            <h2 class="info__h">Falcon Heavy Overview</h2>
+            <h2 class="info__h" data-aos="fade-right" data-aos-delay="100">Falcon Heavy Overview</h2>
             <table class="info__table">
                 <tr>
                     <td class="info__table-h">HEIGHT</td>
@@ -60,14 +61,14 @@
                     <td>16,800 kg / <span>37,040 lb</span></td>
                 </tr>
             </table>
-            <h2 class="info__h">Unmatched perfomance</h2>
+            <h2 class="info__h" data-aos="fade-right" data-aos-delay="100">Unmatched perfomance</h2>
             <p class="info__text">With more than 5 million pounds of thrust at liftoff, Falcon Heavy is the most capable rocket flying. By comparison, the liftoff thrust of the Falcon Heavy equals approximately eighteen 747 aircraft at full power. Falcon Heavy can lift the equivalent of a fully loaded 737 jetliner—complete with passengers, luggage and fuel—to orbit.</p>
             <img src="img/falcon-heavy.png" alt="rocket" class="rellax" data-rellax-speed="10">
         </section>
     </main>
     <footer class="footer container">
-        <a href="#"><img src="img/logo.svg" alt="LOGO" class="logo"></a>
-        <nav class="footer__nav">
+        <a href="#"><img src="img/logo.svg" alt="LOGO" class="logo" data-aos="fade-up" data-aos-delay="100"></a>
+        <nav class="footer__nav" data-aos="fade-up" data-aos-delay="200">
             <ul class="footer__list">
                 <li class="footer__item"><a href="https://twitter.com/spacex">Twitter</a></li>
                 <li class="footer__item"><a href="https://www.youtube.com/spacex">YouTube</a></li>
@@ -77,20 +78,21 @@
                 <li class="footer__item"><a href="https://www.spacex.com/media/privacy_policy_spacex.pdf">Privacy Policy</a></li>
             </ul>
         </nav>
-        <p class="footer__descriptor">For additional questions, contact <a href="mailto:rideshare@spacex.com">rideshare@spacex.com</a></p>
-        <a href="mailto:rideshare@spacex.com"><button class="footer__button">Contact us</button></a>
+        <p class="footer__descriptor" data-aos="fade-up" data-aos-delay="300" data-aos-offset="100">For additional questions, contact <a href="mailto:rideshare@spacex.com">rideshare@spacex.com</a></p>
+        <a href="mailto:rideshare@spacex.com"><button class="footer__button" data-aos="fade-up" data-aos-delay="300" data-aos-offset="100">Contact us</button></a>
     </footer>
     <div class='modal' id='modal1'>
         <div class='modal__content'>
-            <h1 class='modal__title'>About</h1>
-            <p class="modal__text">Space Exploration Technologies Corp., trading as <a href="#">SpaceX</a>, is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</p>
-            <img src="img/close.svg" class='modal__close close-modal' data-modal="#modal1">
+            <h2 class='modal__title'>About</h2>
+            <p class="modal__text">Space Exploration Technologies Corp., trading as <a href="https://www.spacex.com/">SpaceX</a>, is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</p>
+            <img src="img/close.svg" class='modal__close close-modal' alt="close" data-modal="#modal1">
         </div>  
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/vidbg.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

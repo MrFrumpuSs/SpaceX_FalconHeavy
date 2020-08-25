@@ -186,8 +186,14 @@ header .logo {
   user-select: none;
   pointer-events: none;
 }
+header .main-nav__item::before {
+  background-color: #fff;
+}
 header .main-nav__item a {
   color: #fff;
+}
+header .sec-nav__item::before {
+  background-color: #808080;
 }
 header .sec-nav__item a {
   color: #808080;
@@ -289,11 +295,25 @@ main .info .rellax {
   justify-content: center;
 }
 .footer__item {
+  position: relative;
   margin: 0 10px 0 10px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
+}
+.footer__item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  width: 0%;
+  height: 1.5px;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+}
+.footer__item:hover::before {
+  width: 100%;
 }
 .footer__item a {
   color: #fff;
@@ -308,6 +328,21 @@ main .info .rellax {
 }
 .footer__descriptor a {
   color: #808080;
+  position: relative;
+}
+.footer__descriptor a:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #808080;
+  width: 0%;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+.footer__descriptor a:hover::before {
+  width: 100%;
 }
 .footer__button {
   font-family: "Roboto", sans-serif;
@@ -320,6 +355,29 @@ main .info .rellax {
   border-radius: 6px;
   width: 260px;
   height: 60px;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.footer__button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.footer__button:hover {
+  color: #000;
+}
+.footer__button:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
 }
 .footer__button a {
   color: #fff;
@@ -370,11 +428,24 @@ main .info .rellax {
 }
 
 .list-item {
+  position: relative;
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   line-height: 14px;
   margin: 0 10px 0 10px;
+}
+.list-item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+}
+.list-item:hover::before {
+  width: 100%;
 }
 
 .container {
